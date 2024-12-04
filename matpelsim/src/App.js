@@ -24,7 +24,7 @@ function App() {
 
   const connectSocket = () => {
     if (!socket) {
-      const newSocket = io("http://localhost:3002", {
+      const newSocket = io("http://172.20.10.10:3002", {
         transports: ["websocket"],
       });
 
