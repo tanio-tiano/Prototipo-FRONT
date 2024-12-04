@@ -22,9 +22,7 @@ function Operador({ counters, labels, connectSocket, disconnectSocket }) {
         padding: "10px",
       }}
     >
-      <Typography variant="h4" component="h1" gutterBottom>
-        MatPelSim - Operador
-      </Typography>
+      <Typography variant="h4" component="h1" gutterBottom></Typography>
 
       {/* Botones de conexión */}
       <Box sx={{ marginBottom: "20px", display: "flex", gap: "10px" }}>
@@ -47,7 +45,7 @@ function Operador({ counters, labels, connectSocket, disconnectSocket }) {
       {/* Grid Layout para mostrar los contadores en 2 filas y 2 columnas */}
       <Grid2 container spacing={4} justifyContent="center">
         {Object.keys(counters).map((campo, index) => (
-          <Grid2 item xs={6} sm={3} md={6} key={campo}>
+          <Grid2 item xs={6} sm={6} md={6} key={campo}>
             <Paper
               elevation={3}
               sx={{
